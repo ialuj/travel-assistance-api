@@ -21,8 +21,8 @@ import com.travel.assistance.model.TravelAssistanceClass;
 import com.travel.assistance.services.ITravelAssistanceService;
 import com.travel.assistance.utils.JsonUtils;
 
-@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*", maxAge = 3600)
 @RequestMapping("/v1/search")
 public class TravelAssistanceController {
 
